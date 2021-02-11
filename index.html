@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+            <form action="" id="loan-form">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input
+                    type="number"
+                    id="amount"
+                    class="form-control"
+                    placeholder="Loan Amount"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">%</span>
+                  <input
+                    type="number"
+                    id="interest"
+                    class="form-control"
+                    placeholder="Interest"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <input
+                    type="number"
+                    id="years"
+                    class="form-control"
+                    placeholder="Years To Repay"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block form-control"
+                />
+              </div>
+            </form>
+
+            <!-- LOADER  -->
+            <div id="loading" class="pt-4">
+              <img src="img/loading.gif" alt="" />
+            </div>
+
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Monthly Payment</span>
+                  <input
+                    type="number"
+                    id="monthly-payment"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Total Payment</span>
+                  <input
+                    type="number"
+                    id="total-payment"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Total Interest</span>
+                  <input
+                    type="number"
+                    id="total-interest"
+                    class="form-control"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
